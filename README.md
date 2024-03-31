@@ -39,4 +39,4 @@ Day.js library
 
 ## Acknowledgments
 
-The task board application was created based on the requirements provided as part of a coding challenge or project assignment. It serves as a simple yet effective tool for managing project tasks in a collaborative environment.
+The task board application was created based on the requirements provided as part of a coding challenge assignment. It serves as a simple yet effective tool for managing project tasks in a collaborative environment.
