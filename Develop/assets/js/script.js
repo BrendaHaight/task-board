@@ -15,7 +15,7 @@ function createTaskCard(task) {
   let colorClass = ""; // Define colorClass variable
 
   // Check if deadline exists and the task is not marked as "done"
-  if (task.deadline && task.status !== "done") {
+  if (task.status !== "done") {
     const today = dayjs();
     const deadline = dayjs(task.deadline, "DD/MM/YYYY");
 
@@ -44,14 +44,22 @@ function createTaskCard(task) {
 // Function to render the task list
 function renderTaskList() {
   // Clear existing tasks in each column
-  $("#to-do .card-body").empty();
-  $("#in-progress .card-body").empty();
-  $("#done .card-body").empty();
+  $("#todo-cards").empty();
+  $("#in-progress-cards").empty();
+  $("#done-cards").empty();
 
   // Render tasks in corresponding columns
   taskList.forEach(task => {
     const taskCard = createTaskCard(task);
-    $(`#${task.status} .card-body`).append(taskCard);
+    console.log(task.status);
+    if (task.status == "to-do") {
+      $("#todo-cards").append(taskCard);
+    } else if (task.status == "done") {
+      $("#done-cards").append(taskCard);
+    } else {
+      $("#in-progress-cards").append(taskCard);
+    }
+    //$(`#${task.status} .card-body`).append(taskCard);
   });
 
   // Bind delete event to new tasks
@@ -78,7 +86,7 @@ function handleAddTask(event) {
   const deadline = $("#taskDeadline").val();
   const status = "to-do"; // Adjust if your status IDs differ
   const id = generateTaskId();
-
+  console.log("Generate", id);
   // Add new task to the task list
   taskList.push({ id, title, description, deadline, status });
 
