@@ -6,6 +6,8 @@ This is a simple task board application built to help project teams manage proje
 
 To use the task board application, simply open the HTML file in a web browser. You can interact with the task board to add new tasks, update their status, and delete tasks as needed.
 
+![Task board page](develop/images/Task-board-page.png)
+
 ## Features
 
 Task Management: Add individual project tasks with a title, description, and deadline date.
@@ -23,8 +25,12 @@ Enter the title, description, and deadline date for the new task.
 Click the "Save" button to add the task to the task board.
 Updating Task Status:
 
+![Add task](develop/images/adding-ask.png)
+
 Drag a task card from one column to another to update its progress state.
 Tasks will stay in the new column after refreshing the page.
+
+![tasks](develop/images/task-around-columns.png)
 Deleting a Task:
 
 Click the "Delete" button on a task card to remove it from the task board.

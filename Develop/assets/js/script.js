@@ -59,7 +59,6 @@ function renderTaskList() {
     } else {
       $("#in-progress-cards").append(taskCard);
     }
-    //$(`#${task.status} .card-body`).append(taskCard);
   });
 
   // Bind delete event to new tasks
