@@ -25,12 +25,12 @@ Enter the title, description, and deadline date for the new task.
 Click the "Save" button to add the task to the task board.
 Updating Task Status:
 
-![Add task](task-board/images/adding-task.png)
+![Add task](images/adding-task.png)
 
 Drag a task card from one column to another to update its progress state.
 Tasks will stay in the new column after refreshing the page.
 
-![tasks](task-board/images/task-around-columns.png)
+![tasks](images/task-around-columns.png)
 Deleting a Task:
 
 Click the "Delete" button on a task card to remove it from the task board.
