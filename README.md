@@ -6,7 +6,7 @@ This is a simple task board application built to help project teams manage proje
 
 To use the task board application, simply open the HTML file in a web browser. You can interact with the task board to add new tasks, update their status, and delete tasks as needed.
 
-![Task board page](task-board/images/task-board-page.png)
+![Task board page](images/Task-board-page.png)
 
 ## Features
 
